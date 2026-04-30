@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind Web</title>
+  <link rel="canonical" href="https://mindwebcompany.vercel.app/">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mind Web",
+      "alternateName": ["Mind Web Agency", "MindWeb", "Mind Web Company", "Mind Web Compny", "MindWeb Agency", "Mind Web Cyber Security", "Mind Web Development"],
+      "url": "https://mindwebcompany.vercel.app",
+      "logo": "https://mindwebcompany.vercel.app/images/Logo.Panner.webp",
+      "description": "Mind Web — Professional Cyber Security, Web Development, and Digital Solutions Agency based in Cairo, Egypt.",
+      "foundingLocation": "Cairo, Egypt",
+      "founder": {
+        "@type": "Person",
+        "name": "Mohamed Walid",
+        "jobTitle": "CEO & Founder"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cairo",
+        "addressRegion": "Cairo Governorate",
+        "addressCountry": "Egypt"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "mindweb.contact@gmail.com"
+      },
+      "sameAs": [
+        "https://www.facebook.com/mindweb.eg",
+        "https://github.com/MindWeb",
+        "https://www.linkedin.com/in/mindweb",
+        "https://www.instagram.com/mindweb.eg"
+      ]
+    }
+  </script>
+
+  <!-- Primary Meta Tags -->
+  <meta name="description"
+    content="Mind Web — Professional Cyber Security, Custom Web & App Development, and Digital Solutions Agency. 8+ years of expertise protecting and building exceptional digital products from Egypt to the world.">
+  <meta name="keywords" content="Mind Web, MindWeb, Mind Web Agency, Mind Web Company, Mind Web Compny, Mind Web Cyber Security, Mind Web Development, Web Development Agency, Cyber Security Agency, digital solutions, Egypt">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mindwebcompany.vercel.app/">
+  <meta property="og:title" content="Mind Web">
+  <meta property="og:description" content="Mind Web — Professional Cyber Security, Web Development, and Digital Solutions Agency. Premium digital products from Egypt to the world.">
+  <meta property="og:image" content="https://mindwebcompany.vercel.app/images/Logo.Panner.webp">
+  <meta property="og:site_name" content="Mind Web">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mindwebcompany.vercel.app/">
+  <meta name="twitter:title" content="Mind Web">
+  <meta name="twitter:description" content="Mind Web — Professional Cyber Security, Web Development, and Digital Solutions Agency. Premium digital products from Egypt to the world.">
+  <meta name="twitter:image" content="https://mindwebcompany.vercel.app/images/Logo.Panner.webp">
+
+  <link rel="icon" href="images/campanies/1.webp">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/mindweb.css">
+</head>
+
+<body>
+  <div id="scroll-progress"></div>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">
+      <img src="images/Logo.Panner.webp" alt="Mind Web Logo" class="preloader-logo-img" width="120" height="120">
+    </div>
+    <div class="preloader-bar">
+      <div class="preloader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar-mw" id="navbar">
+    <div class="container-mw" style="display:flex;align-items:center;justify-content:space-between;">
+
+      <a href="#home" class="nav-logo">
+        <img src="images/campanies/1.webp" alt="Mind Web Logo" class="nav-logo-img" width="40" height="40">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active"><span class="en">Home</span><span class="ar">الرئيسية</span></a></li>
+        <li><a href="#services"><span class="en">Services</span><span class="ar">الخدمات</span></a></li>
+        <li><a href="#about"><span class="en">About</span><span class="ar">من نحن</span></a></li>
+        <li><a href="#portfolio"><span class="en">Portfolio</span><span class="ar">معرض الأعمال</span></a></li>
+        <li><a href="#testimonials"><span class="en">Testimonials</span><span class="ar">آراء العملاء</span></a></li>
+        <li><a href="#faq"><span class="en">FAQ</span><span class="ar">الأسئلة الشائعة</span></a></li>
+        <li><a href="#contact"><span class="en">Contact</span><span class="ar">اتصل بنا</span></a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn-primary-mw" style="font-size:0.85rem;padding:10px 20px;">
+          <span class="en">Get Started</span><span class="ar">ابدأ مشروعك</span> <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Dark Mode Toggle -->
+      <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark/light mode" title="Toggle Theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+
+      <!-- Language Toggle -->
+      <a href="javascript:void(0)" onclick="toggleLanguage()" id="langToggleBtn" class="btn-outline-mw"
+        style="padding: 6px 12px; font-size: 0.85rem; margin-left: 10px; border-radius: 8px;"
+        title="Switch Language">AR</a>
+
+      <div class="nav-hamburger" id="hamburger" onclick="toggleMobileNav()" aria-label="Toggle navigation menu"
+        role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" id="mobileNav">
+    <button class="nav-mobile-close" onclick="toggleMobileNav()">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="#home" onclick="toggleMobileNav()"><span class="en">Home</span><span class="ar">الرئيسية</span></a>
+    <a href="#services" onclick="toggleMobileNav()"><span class="en">Services</span><span class="ar">الخدمات</span></a>
+    <a href="#about" onclick="toggleMobileNav()"><span class="en">About</span><span class="ar">من نحن</span></a>
+    <a href="#portfolio" onclick="toggleMobileNav()"><span class="en">Portfolio</span><span class="ar">معرض
+        الأعمال</span></a>
+    <a href="#testimonials" onclick="toggleMobileNav()"><span class="en">Testimonials</span><span class="ar">آراء
+        العملاء</span></a>
+    <a href="#faq" onclick="toggleMobileNav()"><span class="en">FAQ</span><span class="ar">الأسئلة الشائعة</span></a>
+    <a href="#contact" onclick="toggleMobileNav()"><span class="en">Contact</span><span class="ar">اتصل بنا</span></a>
+
+    <!-- Mobile CTA -->
+    <div class="nav-mobile-cta-area">
+      <a href="#contact" class="btn-primary-mw" onclick="toggleMobileNav()"
+        style="padding:10px 20px; font-size: 0.9rem;">
+        <span class="en">Get Started</span><span class="ar">ابدأ مشروعك</span> <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div id="particles-js"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+    </div>
+
+    <div class="hero-content" style="width:100%;">
+      <div class="hero-container">
+
+        <!-- Text -->
+        <div class="hero-text-wrap">
+          <div class="hero-eyebrow" data-aos="fade-up">
+            <span class="blink"></span>
+            <span class="en">Cyber Security & Digital Solutions Agency</span><span class="ar">وكالة أمن سيبراني وحلول
+              رقمية</span>
+          </div>
+          <h1 class="hero-title reveal">
+            <span class="gradient-text type-effect"></span><br>
+            <span class="en">Solutions With</span><span class="ar">حلول رقمية متطورة مع</span> <span
+              class="green-text glitch-text" data-text="Mind Web">Mind Web</span>
+          </h1>
+          <p class="hero-description">
+            <span class="en">We build powerful, secure digital solutions — from web applications and mobile apps to
+              cutting-edge cybersecurity protection. Led by our CEO & Founder, Mohamed Walid, backed by 8+ years of
+              industry expertise.</span>
+            <span class="ar">نبني حلولاً رقمية قوية وآمنة — بدءاً من تطبيقات الويب والموبايل وصولاً إلى أنظمة الحماية
+              السيبرانية الحديثة. بقيادة المدير التنفيذي ومؤسس الشركة محمد وليد، بخبرة تتجاوز الـ 8 سنوات.</span>
+          </p>
+          <div class="hero-actions">
+            <a href="#services" class="btn-primary-mw">
+              <span class="en">Our Services</span><span class="ar">الخدمات</span> <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#portfolio" class="btn-outline-mw">
+              <i class="fas fa-eye"></i> <span class="en">View Work</span><span class="ar">أعمالنا</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-number">8+</span>
+              <span class="hero-stat-label"><span class="en">Years Experience</span><span class="ar">سنوات
+                  خبرة</span></span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">220+</span>
+              <span class="hero-stat-label"><span class="en">Projects Delivered</span><span class="ar">مشاريع
+                  منجزة</span></span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">98%</span>
+              <span class="hero-stat-label"><span class="en">Client Satisfaction</span><span class="ar">رضاء
+                  العملاء</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="hero-visual">
+          <div class="hero-card-main">
+            <div class="hero-card-header">
+              <div class="hero-card-dot"></div>
+              <div class="hero-card-dot"></div>
+              <div class="hero-card-dot"></div>
+              <span class="hero-card-title">mindweb_security.py</span>
+            </div>
+            <div class="hero-code-block" id="heroTerminal">
+              <div class="code-line">
+                <span class="code-line-num">1</span>
+                <span class="code-keyword">class </span><span class="code-class">MindWeb</span><span
+                  class="code-op">:</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">2</span>
+                <span>&nbsp;&nbsp;</span><span class="code-keyword">def </span><span
+                  class="code-func">secure_system</span><span class="code-op">(self):</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">3</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="code-var">threats</span><span class="code-op"> =
+                </span><span class="code-func">scan_network</span><span class="code-op">()</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">4</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="code-keyword">for </span><span class="code-var">threat
+                </span><span class="code-keyword">in </span><span class="code-var">threats</span><span
+                  class="code-op">:</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">5</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="code-func">neutralize</span><span
+                  class="code-op">(</span><span class="code-var">threat</span><span class="code-op">)</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">6</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="code-keyword">return </span><span
+                  class="code-string">"✓ System Secured"</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">7</span>
+                <span>&nbsp;</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">8</span>
+                <span>&nbsp;&nbsp;</span><span class="code-keyword">def </span><span
+                  class="code-func">build_web</span><span class="code-op">(self, </span><span
+                  class="code-var">client</span><span class="code-op">):</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">9</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="code-comment"># Build stunning & secure apps</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">10</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="code-keyword">return </span><span
+                  class="code-class">WebApp</span><span class="code-op">(</span><span
+                  class="code-var">client</span><span class="code-op">)</span>
+              </div>
+              <div class="code-line" style="margin-top:8px; opacity: 0;">
+                <span class="code-line-num">11</span>
+                <span class="code-comment"># © Mind Web Agency — Mohamed Walid (CEO)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="hero-floating-badge hero-badge-1">
+            <div class="badge-icon green"><i class="fas fa-shield-halved"></i></div>
+            <div>
+              <span class="badge-text-label">Status</span>
+              <span class="badge-text-value">System Protected</span>
+            </div>
+          </div>
+          <div class="hero-floating-badge hero-badge-2">
+            <div class="badge-icon blue"><i class="fas fa-code"></i></div>
+            <div>
+              <span class="badge-text-label">Latest Build</span>
+              <span class="badge-text-value">v2.0 Deployed ✓</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== CLIENTS / PARTNERS ===================== -->
+  <section class="clients-section">
+    <div class="container-mw">
+      <p class="clients-label">Trusted By</p>
+      <div class="clients-track-wrap">
+        <div class="clients-track" id="clientsTrack">
+          <div class="client-logo"><img src="images/campanies/campany-2.webp" alt="Partner"></div>
+          <div class="client-logo"><img src="images/campanies/1.webp" alt="Partner"></div>
+          <div class="client-logo"><img src="images/campanies/github.webp" alt="GitHub"></div>
+          <div class="client-logo"><img loading="lazy" src="images/campanies/lin.webp" alt="LinkedIn"></div>
+          <div class="client-logo"><img loading="lazy" src="images/campanies/logo team.webp" alt="Partner"></div>
+          <div class="client-logo"><img loading="lazy" src="images/Logo.Panner.webp" alt="Mind Web"></div>
+          <!-- Duplicate for seamless scroll -->
+          <div class="client-logo"><img loading="lazy" src="images/campanies/campany-2.webp" alt="Partner"></div>
+          <div class="client-logo"><img loading="lazy" src="images/campanies/1.webp" alt="Partner"></div>
+          <div class="client-logo"><img loading="lazy" src="images/campanies/github.webp" alt="GitHub"></div>
+          <div class="client-logo"><img loading="lazy" src="images/campanies/lin.webp" alt="LinkedIn"></div>
+          <div class="client-logo"><img loading="lazy" src="images/campanies/logo team.webp" alt="Partner"></div>
+          <div class="client-logo"><img loading="lazy" src="images/Logo.Panner.webp" alt="Mind Web"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== SERVICES SECTION ===================== -->
+  <section id="services" class="services-section lazy-section">
+    <div class="container-mw">
+      <div class="text-center reveal">
+        <span class="section-badge"><span class="en">What We Offer</span><span class="ar">ماذا نقدم</span></span>
+        <h2 class="section-title"><span class="en">Our <span>Services</span></span><span class="ar"><span>خدماتنا</span>
+            التقنية</span></h2>
+        <div class="heading-divider"></div>
+        <p class="section-subtitle">
+          <span class="en">Comprehensive digital solutions tailored to protect and grow your business — from
+            cybersecurity to stunning web experiences.</span>
+          <span class="ar">حلول رقمية شاملة مصممة خصيصاً لحماية وتنمية أعمالك — من الأمن السيبراني إلى تجارب الويب
+            المذهلة.</span>
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1: Cybersecurity -->
+        <div class="service-card holographic-card reveal" data-tilt data-tilt-max="10" data-tilt-speed="400"
+          data-tilt-glare="true" data-tilt-max-glare="0.2">
+          <div class="service-icon cyan">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="service-card-title"><span class="en">Cybersecurity</span><span class="ar">الأمن السيبراني</span>
+          </h3>
+          <p class="service-card-desc">
+            <span class="en">Advanced threat analysis, penetration testing, risk management, and security training. We
+              protect your systems from modern cyber threats.</span>
+            <span class="ar">تحليل متقدم للتهديدات، اختبارات الاختراق، إدارة المخاطر الخفية. نحن نضمن حماية أنظمتك
+              بالكامل من أشرس الهجمات السيبرانية.</span>
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Pen Testing</span>
+            <span class="service-tag">Threat Analysis</span>
+            <span class="service-tag">Risk Mgmt</span>
+          </div>
+        </div>
+
+        <!-- Service 2: Web Development -->
+        <div class="service-card holographic-card reveal" style="transition-delay:0.1s" data-tilt data-tilt-max="10"
+          data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+          <div class="service-icon green">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="service-card-title"><span class="en">Web Development</span><span class="ar">تطوير الويب</span></h3>
+          <p class="service-card-desc">
+            <span class="en">Full-stack web applications, responsive websites, and database development with modern
+              technologies and best practices.</span>
+            <span class="ar">بناء تطبيقات ويب شاملة، مواقع فائقة التجاوب والمظهر، وتطوير قواعد بيانات آمنة بأحدث
+              التقنيات وأفضل معايير البرمجة العالمية.</span>
+          </p>
+          <div class="service-tags">
+            <span class="service-tag green">Frontend</span>
+            <span class="service-tag green">Backend</span>
+            <span class="service-tag green">Database</span>
+          </div>
+        </div>
+
+        <!-- Service 3: App Development -->
+        <div class="service-card holographic-card reveal" style="transition-delay:0.2s" data-tilt data-tilt-max="10"
+          data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+          <div class="service-icon purple">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="service-card-title"><span class="en">App Development</span><span class="ar">تطوير التطبيقات</span>
+          </h3>
+          <p class="service-card-desc">
+            <span class="en">Cross-platform mobile and desktop applications with clean architecture, intuitive UX, and
+              high performance.</span>
+            <span class="ar">بناء تطبيقات هواتف وحواسيب متعددة المنصات بهيكلة برمجية نظيفة، تجربة مستخدم بديهية، وأداء
+              صاروخي لا يضاهى.</span>
+          </p>
+          <div class="service-tags">
+            <span class="service-tag purple">Mobile</span>
+            <span class="service-tag purple">Desktop</span>
+            <span class="service-tag purple">Cross-Platform</span>
+          </div>
+        </div>
+
+        <!-- Service 4: IT Consulting -->
+        <div class="service-card holographic-card reveal" style="transition-delay:0.3s" data-tilt data-tilt-max="10"
+          data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+          <div class="service-icon orange">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="service-card-title"><span class="en">IT Consulting</span><span class="ar">استشارات تقنية</span>
+          </h3>
+          <p class="service-card-desc">
+            <span class="en">Strategic technology consulting to help businesses make smart digital decisions, optimize
+              their IT infrastructure, and stay ahead of cyber threats.</span>
+            <span class="ar">استشارات تقنية استراتيجية تساعد الشركات على اتخاذ قرارات رقمية ذكية وتحسين بنيتها التحتية
+              والبقاء متقدمة على التهديدات السيبرانية.</span>
+          </p>
+          <div class="service-tags">
+            <span class="service-tag"
+              style="color:#ffaa00;border-color:rgba(255,170,0,0.3);background:rgba(255,170,0,0.08)">Strategy</span>
+            <span class="service-tag"
+              style="color:#ffaa00;border-color:rgba(255,170,0,0.3);background:rgba(255,170,0,0.08)">IT Planning</span>
+            <span class="service-tag"
+              style="color:#ffaa00;border-color:rgba(255,170,0,0.3);background:rgba(255,170,0,0.08)">Advisory</span>
+          </div>
+        </div>
+
+        <!-- Service 5: Security Training -->
+        <div class="service-card holographic-card reveal" style="transition-delay:0.4s" data-tilt data-tilt-max="10"
+          data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+          <div class="service-icon red">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h3 class="service-card-title"><span class="en">Security Training</span><span class="ar">التدريب الأمني</span>
+          </h3>
+          <p class="service-card-desc">
+            <span class="en">Comprehensive cybersecurity awareness training for individuals and teams to recognize and
+              counter digital threats effectively.</span>
+            <span class="ar">تدريب توعوي شامل في الأمن السيبراني للأفراد والفرق التقنية للتعرف على التهديدات الرقمية
+              الخبيثة وكيفية صدها بفعالية تامة.</span>
+          </p>
+          <div class="service-tags">
+            <span class="service-tag"
+              style="color:#ff5050;border-color:rgba(255,80,80,0.3);background:rgba(255,80,80,0.08)">Awareness</span>
+            <span class="service-tag"
+              style="color:#ff5050;border-color:rgba(255,80,80,0.3);background:rgba(255,80,80,0.08)">Workshops</span>
+          </div>
+        </div>
+
+        <!-- Service 6: Database Solutions -->
+        <div class="service-card holographic-card reveal" style="transition-delay:0.5s" data-tilt data-tilt-max="10"
+          data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+          <div class="service-icon teal">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3 class="service-card-title"><span class="en">Database Solutions</span><span class="ar">حلول قواعد
+              البيانات</span></h3>
+          <p class="service-card-desc">
+            <span class="en">Efficient database design, optimization, and secure data management solutions for
+              businesses of all sizes.</span>
+            <span class="ar">تصميم متقدم لقواعد البيانات، تسريع وتحسين الأداء، وحلول ضخمة لإدارة البيانات بشكل آمن
+              للشركات بجميع أحجامها.</span>
+          </p>
+          <div class="service-tags">
+            <span class="service-tag"
+              style="color:#00dcb4;border-color:rgba(0,220,180,0.3);background:rgba(0,220,180,0.08)">MySQL</span>
+            <span class="service-tag"
+              style="color:#00dcb4;border-color:rgba(0,220,180,0.3);background:rgba(0,220,180,0.08)">PostgreSQL</span>
+            <span class="service-tag"
+              style="color:#00dcb4;border-color:rgba(0,220,180,0.3);background:rgba(0,220,180,0.08)">Optimization</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="reveal"
+        style="background:linear-gradient(135deg, rgba(0,212,255,0.08) 0%, rgba(123,47,255,0.08) 100%); border:1px solid rgba(0,212,255,0.2); border-radius:20px; padding:48px; text-align:center;">
+        <h3 style="font-size:1.6rem; font-weight:700; margin-bottom:12px;">
+          <span class="en">Ready to secure your digital presence?</span><span class="ar">هل أنت مستعد لتأمين وتطوير
+            أعمالك الرقمية؟</span>
+        </h3>
+        <p style="color:var(--text-secondary); margin-bottom:28px; font-size:1rem;">
+          <span class="en">Get a free consultation with our team and discover how Mind Web can transform your
+            business.</span>
+          <span class="ar">احصل على استشارة مجانية مع فريقنا واكتشف كيف يمكن لـ "مايند ويب" تغيير مسار عملك
+            بالكامل.</span>
+        </p>
+        <a href="#contact" class="btn-primary-mw">
+          <span class="en">Start Your Project</span><span class="ar">ابدأ مشروعك الآن</span> <i
+            class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== ABOUT / FOUNDER SECTION ===================== -->
+  <section id="about" class="about-section lazy-section">
+    <div class="container-mw">
+      <div class="about-grid">
+
+        <div class="about-image-wrap reveal-left">
+
+          <div class="about-image-main">
+            <!-- Animated Background Effects INSIDE the card -->
+            <div class="about-anim-bg">
+              <div class="about-glow-blob"></div>
+              <div class="about-ring about-ring-1"></div>
+              <div class="about-ring about-ring-2"></div>
+              <div class="about-ring about-ring-3"></div>
+              <div class="about-orbit">
+                <div class="about-orbit-dot about-orbit-dot-1"></div>
+                <div class="about-orbit-dot about-orbit-dot-2"></div>
+                <div class="about-orbit-dot about-orbit-dot-3"></div>
+              </div>
+            </div>
+
+            <!-- Floating Tech Icons INSIDE the card -->
+            <div class="about-float-icon about-float-1"><i class="fas fa-shield-alt"></i></div>
+            <div class="about-float-icon about-float-2"><i class="fas fa-code"></i></div>
+            <div class="about-float-icon about-float-3"><i class="fas fa-lock"></i></div>
+            <div class="about-float-icon about-float-4"><i class="fas fa-database"></i></div>
+            <div class="about-float-icon about-float-5"><i class="fas fa-terminal"></i></div>
+            <div class="about-float-icon about-float-6"><i class="fas fa-bug"></i></div>
+
+            <!-- Logo on top of everything -->
+            <img src="images/Logo.Panner.webp" loading="lazy" alt="Mind Web Logo" class="about-logo-img">
+          </div>
+          <div class="about-exp-badge">
+            <span class="about-exp-num counter-number" data-target="8" data-suffix="+">0+</span>
+            <span class="about-exp-txt"><span class="en">Years of<br>Expertise</span><span class="ar">سنوات
+                من<br>الخبرة</span></span>
+          </div>
+          <div class="about-tech-badge">
+            <span class="about-tech-icon">🛡️</span>
+            <div>
+              <span class="about-tech-label"><span class="en">Specialization</span><span class="ar">التخصص
+                  الأساسي</span></span>
+              <span class="about-tech-value"><span class="en">Cyber Security</span><span class="ar">الأمن
+                  السيبراني</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Side -->
+        <div class="about-text reveal-right">
+          <span class="section-badge"><span class="en">Meet The Founder</span><span class="ar">تعرف على
+              المؤسس</span></span>
+          <h2 class="section-title" style="text-align:left; margin-bottom:8px;">
+            <span class="en">Mohamed <span>Walid</span></span>
+            <span class="ar">محمد <span>وليد</span></span>
+          </h2>
+          <p
+            style="font-size:0.9rem; color:var(--primary); font-weight:600; margin-bottom:20px; text-transform:uppercase; letter-spacing:2px;">
+            <span class="en">CEO & Founder — Mind Web</span>
+            <span class="ar">المدير التنفيذي والمؤسس — مايند ويب</span>
+          </p>
+
+          <p class="about-description">
+            <span class="en">Mind Web was founded by Mohamed Walid. With over 8 years of hands-on experience, Mind Web
+              combines three powerful skill sets — Cyber Security, Custom Software Development, and Database Solutions —
+              to
+              deliver complete digital solutions that are both secure and powerful.</span>
+            <span class="ar">تأسست وكالة مايند ويب على يد محمد وليد. بخبرة عملية تتجاوز الثماني سنوات، تجمع مايند ويب
+              بين ثلاث قدرات
+              قوية — الأمن السيبراني، وتطوير البرمجيات المخصصة، وحلول قواعد البيانات — لتقديم حلول رقمية مكتملة وآمنة
+              وقوية.</span>
+          </p>
+          <p class="about-description">
+            <span class="en">Based in Egypt, Cairo, Mind Web works with clients globally, providing innovative and
+              effective digital solutions that meet their unique business needs. The combination
+              of these three disciplines gives Mind Web a unique competitive advantage.</span>
+            <span class="ar">مستقرة في مصر، القاهرة، تعمل مايند ويب مع عملاء من جميع أنحاء العالم لتقديم حلول
+              رقمية
+              مبتكرة وفعالة تلبي احتياجات أعمالهم بدقة. يمنح المزج بين الحماية المتقدمة والبرمجة الاحترافية وحلول قواعد
+              البيانات
+              ميزة تنافسية لا تضاهى.</span>
+          </p>
+
+          <!-- Skills -->
+          <div class="about-skills">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><span class="en">Cybersecurity</span><span class="ar">الأمن
+                    السيبراني</span></span>
+                <span class="skill-percent counter-number" data-target="95" data-suffix="%">0%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><span class="en">Web Development</span><span class="ar">تطوير
+                    الويب</span></span>
+                <span class="skill-percent counter-number" data-target="90" data-suffix="%">0%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><span class="en">App Development</span><span class="ar">تطوير
+                    التطبيقات</span></span>
+                <span class="skill-percent counter-number" data-target="80" data-suffix="%">0%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><span class="en">Database Solutions</span><span class="ar">قواعد
+                    البيانات</span></span>
+                <span class="skill-percent counter-number" data-target="90" data-suffix="%">0%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-highlights" style="margin-bottom:32px;">
+            <div class="highlight-item"><i class="fas fa-check-circle"></i> <span class="en">Penetration
+                Testing</span><span class="ar">اختبار الاختراق</span></div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i> <span class="en">Full-Stack Dev</span><span
+                class="ar">برمجة شاملة</span></div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i> <span class="en">Database Design</span><span
+                class="ar">قواعد البيانات</span></div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i> <span class="en">UI/UX Design</span><span
+                class="ar">تصميم واجهات</span></div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i> <span class="en">Security Audits</span><span
+                class="ar">مراجعات أمنية</span></div>
+          </div>
+
+          <div style="display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="#contact" class="btn-primary-mw"><span class="en">Hire Us</span><span class="ar">وظّفنا الآن</span>
+              <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Cyber Terminal — Full Width Below Grid -->
+      <div class="cyber-terminal-panel cyber-terminal-full" id="aboutTerminal">
+        <div id="terminalOutput"></div>
+        <span class="cyber-cursor"></span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container-mw">
+      <div class="text-center reveal">
+        <span class="section-badge"><span class="en">Client Feedback</span><span class="ar">آراء العملاء</span></span>
+        <h2 class="section-title"><span class="en">What They <span>Say</span></span><span class="ar">ماذا <span>قالوا
+              عنا</span></span></h2>
+        <div class="heading-divider"></div>
+        <p class="section-subtitle">
+          <span class="en">Real feedback from our valued clients who trusted Mind Web with their projects.</span>
+          <span class="ar">آراء وتجارب حقيقية من عملائنا الكرام الذين وثقوا بـ مايند ويب لتنفيذ مشاريعهم.</span>
+        </p>
+      </div>
+
+      <div class="testimonials-slider reveal">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card active">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            <span class="en">"Mind Web is an excellent agency that combines 3 great skills. They helped me develop my
+              work tremendously. A very distinguished team that delivers results beyond expectations."</span>
+            <span class="ar">"مايند ويب وكالة ممتازة جداً تجمع بين 3 مهارات رائعة، ساعدتني وطورت من عملي
+              بشكل كبير، فريق متميز جداً وخطير."</span>
+          </p>
+          <div class="testimonial-author">
+            <img src="images/testimonials/client-1.webp" alt="Taha Elsherif" class="testimonial-avatar">
+            <div>
+              <p class="testimonial-name"><span class="en">Taha Elsherif</span><span class="ar">طه الشريف</span></p>
+              <p class="testimonial-role"><span class="en">Artist</span><span class="ar">فنان</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            <span class="en">"Mind Web is a very talented and creative agency. They helped me greatly in developing
+              many things — from designing an attractive logo to a professional website. I sincerely recommend anyone
+              looking for high-quality design and programming services to work with them."</span>
+            <span class="ar">"وكالة موهوبة جداً ومبدعة، ساعدتني كتير في تطوير حاجات كتير من الأول في تصميم لوجو جذاب
+              ولحد
+              موقع إلكتروني احترافي.. بجد أنصح أي حد باحث عن خدمات تصميم وبرمجة بجودة عالية إنه يتعامل مع مايند
+              ويب."</span>
+          </p>
+          <div class="testimonial-author">
+            <img src="images/testimonials/client-2.webp" alt="Hashem Taha" class="testimonial-avatar" loading="lazy">
+            <div>
+              <p class="testimonial-name"><span class="en">Eng. Hashem Taha</span><span class="ar">مهندس هاشم طه</span>
+              </p>
+              <p class="testimonial-role"><span class="en">Engineer</span><span class="ar">مهندس</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            <span class="en">"Mind Web is a talented and very creative agency. They combine 3 rare skills in
+              the digital field. I recommend them to everyone looking for a professional and skilled agency. From
+              personal
+              experience, they are exactly the right team that will provide you with the solutions you need."</span>
+            <span class="ar">"مايند ويب وكالة موهوبة ومبدعة جداً تجمع بين 3 مهارات نادرة، أنصح الجميع بالتعامل معاها لو
+              بتدور على
+              وكالة شاطرة ومحترفة.. عن تجربة شخصية هي الخيار المناسب اللي هيوفرلك الحلول اللي محتاجها."</span>
+          </p>
+          <div class="testimonial-author">
+            <img src="images/testimonials/client-3.webp" alt="Ahmed Yousef" class="testimonial-avatar" loading="lazy">
+            <div>
+              <p class="testimonial-name"><span class="en">Eng. Ahmed Yousef</span><span class="ar">مهندس أحمد
+                  يوسف</span></p>
+              <p class="testimonial-role"><span class="en">Physics Teacher</span><span class="ar">مدرس فيزياء</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            <span class="en">"Mind Web has a wonderful talent in programming, design, and cybersecurity. Their passion
+              for
+              their work makes every project they take on a masterpiece. Their problem-solving is excellent — they find
+              innovative and effective solutions. They helped me understand cybersecurity risks and protect myself from
+              electronic attacks."</span>
+            <span class="ar">"ما شاء الله بجد مايند ويب تمتلك فريق عمل رائع في مجال البرمجة والتصميم والأمن السيبراني،
+              وشغفهم بعملهم
+              بيخلي أي مشروع يشتغلوا فيه تحفة فنية.. مهارات حل المشاكل عندهم ممتازة بيلاقوا دايماً حلول مبتكرة وفعالة،
+              وساعدوني أفهم وأحمي نفسي من مخاطر الأمن السيبراني والهجمات الإلكترونية."</span>
+          </p>
+          <div class="testimonial-author">
+            <img src="images/testimonials/client-4.webp" alt="Mohamed Ahmed" class="testimonial-avatar" loading="lazy">
+            <div>
+              <p class="testimonial-name"><span class="en">Mohamed Ahmed</span><span class="ar">محمد أحمد</span></p>
+              <p class="testimonial-role"><span class="en">Upwork Client</span><span class="ar">عميل على Upwork</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="testimonial-nav">
+          <button class="testimonial-btn" id="prevTestimonial" aria-label="Previous testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="testimonial-dots" id="testimonialDots">
+            <div class="testimonial-dot active" data-index="0"></div>
+            <div class="testimonial-dot" data-index="1"></div>
+            <div class="testimonial-dot" data-index="2"></div>
+            <div class="testimonial-dot" data-index="3"></div>
+          </div>
+          <button class="testimonial-btn" id="nextTestimonial" aria-label="Next testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== FAQ SECTION ===================== -->
+  <section id="faq" class="faq-section">
+    <div class="container-mw">
+      <div class="text-center reveal">
+        <span class="section-badge"><span class="en">Got Questions?</span><span class="ar">هل لديك أسئلة؟</span></span>
+        <h2 class="section-title"><span class="en">Frequently Asked <span>Questions</span></span><span
+            class="ar">الأسئلة <span>الشائعة</span></span></h2>
+        <div class="heading-divider"></div>
+        <p class="section-subtitle">
+          <span class="en">Answers to frequently asked questions about our services and expertise.</span>
+          <span class="ar">إجابات للأسئلة الأكثر شيوعاً حول خدماتنا وخبراتنا التقنية.</span>
+        </p>
+      </div>
+
+      <div class="faq-grid reveal">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span class="faq-question-text"><span class="en">What are the most important programming skills a successful
+                developer must have?</span><span class="ar">ما هي أهم مهارات البرمجة التي يجب أن يمتلكها المطور
+                الناجح؟</span></span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="en">A successful programmer must master: <strong>1. Problem Solving</strong> — the ability to
+                tackle any challenge methodically. <strong>2. Logical Thinking</strong> — analyzing problems and
+                building solutions systematically. <strong>3. Effective Communication</strong> — collaborating with both
+                technical and non-technical stakeholders.</span>
+              <span class="ar">المبرمج الناجح يجب أن يتقن: <strong>١. حل المشكلات</strong> — القدرة على التعامل مع أي
+                تحدٍ بمنهجية. <strong>٢. التفكير المنطقي</strong> — تحليل المشاكل وبناء الحلول بشكل منظم. <strong>٣.
+                  التواصل الفعال</strong> — التعاون مع الفريق التقني وغير التقني.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span class="faq-question-text"><span class="en">What are the main challenges in web development and
+                programming?</span><span class="ar">ما هي التحديات الرئيسية في تطوير الويب والبرمجة؟</span></span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="en">Key challenges include: <strong>1. Rapid Evolution</strong> — new technologies emerge
+                constantly. <strong>2. Scale & Complexity</strong> — modern web apps are increasingly complex.
+                <strong>3. Security</strong> — web applications face numerous threats like hacking and data theft,
+                requiring strong security measures.</span>
+              <span class="ar">تشمل التحديات الرئيسية: <strong>١. التطور السريع</strong> — ظهور تقنيات جديدة باستمرار.
+                <strong>٢. الحجم والتعقيد</strong> — تطبيقات الويب الحديثة تزداد تعقيداً. <strong>٣. الأمان</strong> —
+                تواجه التطبيقات تهديدات عديدة كالاختراق وسرقة البيانات مما يتطلب تدابير أمنية صارمة.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span class="faq-question-text"><span class="en">Will AI affect the future of programming and
+                cybersecurity?</span><span class="ar">هل سيؤثر الذكاء الاصطناعي على مستقبل البرمجة والأمن
+                السيبراني؟</span></span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="en">AI is a transformative technology that can change our lives significantly — for both good
+                and bad. It's crucial to understand its potential impacts, both positive and negative, to develop and
+                use it responsibly. In cybersecurity, AI is already being used for threat detection and response
+                automation.</span>
+              <span class="ar">الذكاء الاصطناعي هو تقنية تحويلية ستغير حياتنا بشكل كبير. يجب فهم تأثيراتها وتطويرها بشكل
+                مسؤول. وفي الأمن السيبراني، يُستخدم الذكاء الاصطناعي حالياً لاكتشاف التهديدات وأتمتة الاستجابات الذكية
+                للهجمات الحية.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span class="faq-question-text"><span class="en">How can I protect myself from cyber attacks?</span><span
+                class="ar">كيف يمكنني حماية نفسي من الهجمات السيبرانية؟</span></span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="en">Key protection steps: <strong>1.</strong> Use strong, unique passwords.
+                <strong>2.</strong> Keep software updated to patch vulnerabilities. <strong>3.</strong> Use antivirus
+                and anti-malware software. <strong>4.</strong> Never click unknown links or download from unverified
+                sources. <strong>5. (Most important)</strong> Avoid modified apps like "Gold WhatsApp" — they contain
+                surveillance software with no data protection.</span>
+              <span class="ar">أهم خطوات الحماية: <strong>١.</strong> استخدم كلمات مرور قوية وفريدة. <strong>٢.</strong>
+                حافظ على تحديث برامجك لسد الثغرات. <strong>٣.</strong> استخدم برامج مكافحة الفيروسات.
+                <strong>٤.</strong> لا تضغط على روابط مجهولة أو تنزل برامج من مصادر غير موثوقة. <strong>٥.
+                  (الأهم)</strong> تجنب التطبيقات المعدلة مثل "واتساب الذهبي" — فهي تحتوي على برمجيات مراقبة ولا تضمن
+                الخصوصية.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span class="faq-question-text"><span class="en">What technologies does Mind Web specialize in?</span><span
+                class="ar">ما هي التقنيات التي تتخصص فيها مايند ويب؟</span></span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="en">Mind Web specializes in: HTML/CSS/JavaScript, Python, PHP, MySQL, PostgreSQL for web
+                development. For cybersecurity: penetration testing tools, network analysis, vulnerability assessment.
+                For design: Adobe Photoshop, Illustrator, and modern design tools.</span>
+              <span class="ar">تتخصص مايند ويب في تقنيات: HTML/CSS/JavaScript و Python و PHP و MySQL و PostgreSQL لتطوير
+                الويب. وفي الأمن السيبراني: أدوات اختبار الاختراق، تحليل الشبكات، وتقييم الثغرات. وفي التصميم: Adobe
+                Photoshop و Illustrator وأدوات التصميم الحديثة.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span class="faq-question-text"><span class="en">How long does a typical project take to
+                complete?</span><span class="ar">كم من الوقت يستغرق إنجاز المشروع المعتاد؟</span></span>
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="en">Project timelines vary based on complexity. A simple landing page takes 3–7 days. A full
+                web application may take 2–6 weeks. Cybersecurity audits typically take 1–2 weeks. We always provide a
+                detailed timeline estimate during our initial consultation. We prioritize quality over speed while
+                meeting agreed deadlines.</span>
+              <span class="ar">تختلف الجداول الزمنية للمشاريع بناءً على التعقيد. تستغرق صفحة الهبوط البسيطة من ٣ إلى ٧
+                أيام. وقد يستغرق تطبيق الويب الكامل من ٢ إلى ٦ أسابيع. أما المراجعات الأمنية فتستغرق عادةً من أسبوع إلى
+                أسبوعين. نحن دائماً نقدم تقديراً مفصلاً للوقت ونضع الجودة كأولوية قصوى.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== PORTFOLIO SECTION ===================== -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container-mw">
+      <div class="text-center reveal">
+        <span class="section-badge"><span class="en">Our Masterpieces</span><span class="ar">أفضل أعمالنا</span></span>
+        <h2 class="section-title"><span class="en">Featured <span>Work</span></span><span class="ar">مشاريع
+            <span>متميزة</span></span></h2>
+        <div class="heading-divider"></div>
+        <p class="section-subtitle">
+          <span class="en">A showcase of our best work in web development, app development, and cybersecurity.</span>
+          <span class="ar">معرض لأفضل أعمالنا في تطوير تطبيقات الويب والموبايل، والأمن السيبراني.</span>
+        </p>
+      </div>
+
+      <div class="portfolio-filters reveal">
+        <button class="portfolio-filter-btn active" data-filter="*"><span class="en">All</span><span
+            class="ar">الكل</span></button>
+        <button class="portfolio-filter-btn" data-filter="web"><span class="en">Web</span><span
+            class="ar">مواقع</span></button>
+        <button class="portfolio-filter-btn" data-filter="security"><span class="en">Security</span><span class="ar">أمن
+            سيبراني</span></button>
+        <button class="portfolio-filter-btn" data-filter="app"><span class="en">App</span><span
+            class="ar">تطبيقات</span></button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-item holographic-card" data-category="security" style="pointer-events: none;">
+          <div
+            style="position:absolute;inset:0;background:rgba(2,11,24,0.7);backdrop-filter:blur(8px);z-index:2;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;">
+            <i class="fas fa-shield-alt" style="font-size:2.5rem;color:rgba(0,212,255,0.8);"></i>
+            <h3
+              style="font-family:var(--font-heading);font-size:1.8rem;color:#fff;letter-spacing:3px;text-transform:uppercase;margin:0;">
+              <span class="en">Coming Soon</span><span class="ar">قريباً</span>
+            </h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;"><span class="en">Cyber Security Project</span><span
+                class="ar">مشروع أمن سيبراني</span></p>
+          </div>
+          <img src="images/portfolio/Design-1.webp" alt="Coming Soon" class="portfolio-img"
+            style="filter: blur(8px) grayscale(50%);">
+        </div>
+
+        <div class="portfolio-item holographic-card" data-category="security" style="pointer-events: none;">
+          <div
+            style="position:absolute;inset:0;background:rgba(2,11,24,0.7);backdrop-filter:blur(8px);z-index:2;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;">
+            <i class="fas fa-lock" style="font-size:2.5rem;color:rgba(0,212,255,0.8);"></i>
+            <h3
+              style="font-family:var(--font-heading);font-size:1.8rem;color:#fff;letter-spacing:3px;text-transform:uppercase;margin:0;">
+              <span class="en">Coming Soon</span><span class="ar">قريباً</span>
+            </h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;"><span class="en">Network Pentesting</span><span
+                class="ar">اختبار اختراق الشبكات</span></p>
+          </div>
+          <img src="images/portfolio/Design-2.webp" alt="Coming Soon" class="portfolio-img"
+            style="filter: blur(8px) grayscale(50%);">
+        </div>
+
+        <div class="portfolio-item holographic-card" data-category="app" style="pointer-events: none;">
+          <div
+            style="position:absolute;inset:0;background:rgba(2,11,24,0.7);backdrop-filter:blur(8px);z-index:2;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;">
+            <i class="fas fa-mobile-alt" style="font-size:2.5rem;color:rgba(0,212,255,0.8);"></i>
+            <h3
+              style="font-family:var(--font-heading);font-size:1.8rem;color:#fff;letter-spacing:3px;text-transform:uppercase;margin:0;">
+              <span class="en">Coming Soon</span><span class="ar">قريباً</span>
+            </h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;"><span class="en">Mobile Application</span><span
+                class="ar">تطبيق موبايل</span></p>
+          </div>
+          <img src="images/portfolio/Design-3.webp" alt="Coming Soon" class="portfolio-img"
+            style="filter: blur(8px) grayscale(50%);">
+        </div>
+
+        <div class="portfolio-item holographic-card" data-category="web">
+          <img src="images/portfolio/Design-4.webp" alt="Website Project" class="portfolio-img" loading="lazy">
+          <div class="portfolio-overlay">
+            <h4 class="portfolio-item-title"><span class="en">Personal Portfolio Website</span><span class="ar">موقع
+                معرض أعمال شخصي</span></h4>
+            <p class="portfolio-item-cat"><span class="en">HTML · CSS · JavaScript</span><span class="ar">برمجة واجهات
+                ومواقع</span></p>
+          </div>
+          <a href="https://wg-design.github.io/Mohamed-Walid/" target="_blank" class="portfolio-item-link">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="portfolio-item holographic-card" data-category="web">
+          <img src="images/portfolio/Design-5.webp" alt="Educational Platform" class="portfolio-img" loading="lazy">
+          <div class="portfolio-overlay">
+            <h4 class="portfolio-item-title"><span class="en">Educational Platform</span><span class="ar">منصة تعليمية
+                إلكترونية</span></h4>
+            <p class="portfolio-item-cat"><span class="en">Full-Stack Development</span><span class="ar">برمجة مواقع
+                شاملة</span></p>
+          </div>
+          <div class="portfolio-item-link" style="background:var(--text-muted);cursor:default;">
+            <i class="fas fa-clock"></i>
+          </div>
+        </div>
+
+        <div class="portfolio-item holographic-card" data-category="web">
+          <img src="images/portfolio/PassVault.webp" alt="PassVault" class="portfolio-img" loading="lazy">
+          <div class="portfolio-overlay">
+            <h4 class="portfolio-item-title"><span class="en">PassVault</span><span class="ar">خزنة PassVault</span>
+            </h4>
+            <p class="portfolio-item-cat"><span class="en">🔐 Secure Password Generator</span><span class="ar">🔐 مُولد
+                كلمات مرور آمنة</span></p>
+          </div>
+          <a href="https://1-mw.github.io/PassVault/" target="_blank" class="portfolio-item-link">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="contact-section">
+    <div class="container-mw">
+      <div class="text-center reveal">
+        <span class="section-badge"><span class="en">Get In Touch</span><span class="ar">تواصل معنا</span></span>
+        <h2 class="section-title"><span class="en">Start Your <span>Project</span></span><span class="ar">ابدأ
+            <span>مشروعك</span></span></h2>
+        <div class="heading-divider"></div>
+        <p class="section-subtitle"><span class="en">Ready to build something amazing? Reach out and let's discuss how
+            Mind Web can help you.</span><span class="ar">هل أنت مستعد لبناء مشروع مذهل؟ تواصل معنا ونجاحك يبدأ من
+            هنا.</span></p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">
+            <span class="en">Have a project in mind or need cybersecurity consultation? We'd love to hear from you. Get
+              in touch through any of the channels below, and we'll get back to you as soon as possible.</span>
+            <span class="ar">هل لديك مشروع في ذهنك أو تحتاج إلى استشارة أمنية؟ نسعد دائماً بسماعك. تواصل معنا عبر أي من
+              القنوات المتاحة وسنرد عليك في أقرب وقت ممكن.</span>
+          </p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-card-label"><span class="en">Email</span><span class="ar">البريد
+                    الإلكتروني</span></span>
+                <a href="mailto:mindweb.contact@gmail.com" class="contact-card-value">mindweb.contact@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-card-label"><span class="en">Location</span><span class="ar">الموقع</span></span>
+                <span class="contact-card-value" style="display:block;"><span class="en">Egypt, Cairo</span><span
+                    class="ar">مصر، القاهرة</span></span>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <span class="contact-card-label"><span class="en">Working Hours</span><span class="ar">ساعات
+                    العمل</span></span>
+                <span class="contact-card-value"><span class="en">Sun – Fri, 9am – 6pm</span><span class="ar">الأحد –
+                    الجمعة، ٩ ص – ٦ م</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/mindweb.eg" target="_blank" class="social-link" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://github.com/MindWeb" target="_blank" class="social-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mindweb" target="_blank" class="social-link" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/mindweb.eg" target="_blank" class="social-link" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal-right">
+          <h3 class="form-title"><span class="en">Send Us a Message</span><span class="ar">أرسل لنا رسالة</span></h3>
+          <p class="form-subtitle"><span class="en">Fill out the form and we'll respond within 24 hours.</span><span
+              class="ar">قم بتعبئة النموذج وسنقوم بالرد خلال 24 ساعة.</span></p>
+
+          <form
+            action="https://script.google.com/macros/s/AKfycbwu6tvQM1Iey1piZ3xFGV2-niLnXsWX9AeRcWqzoQIL0JhL_fDEcOmqGXFbKKCJ8bY/exec"
+            method="post" onsubmit="submitForm(event)">
+            <!-- Honeypot (Anti-Bot) -->
+            <input type="text" name="_honeypot" id="_honeypot" style="display:none" tabindex="-1" autocomplete="off">
+            <input type="hidden" id="formLoadTime" value="">
+            <script>document.getElementById('formLoadTime').value = Date.now();</script>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="inputFirstName"><span class="en">First Name</span><span class="ar">الاسم
+                    الأول</span></label>
+                <input type="text" name="First Name" id="inputFirstName" placeholder="Mohamed / محمد"
+                  class="form-control-mw" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="inputLastName"><span class="en">Last Name</span><span class="ar">الاسم
+                    الأخير</span></label>
+                <input type="text" name="Last Name" id="inputLastName" placeholder="Ahmed / أحمد"
+                  class="form-control-mw" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inputEmail"><span class="en">Email Address</span><span class="ar">البريد
+                  الإلكتروني</span></label>
+              <input type="email" name="Email" id="inputEmail" placeholder="you@example.com" class="form-control-mw"
+                required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message"><span class="en">Your Message</span><span
+                  class="ar">رسالتك</span></label>
+              <textarea name="message" id="message" placeholder="Tell us about your project... / حدثنا عن مشروعك..."
+                rows="5" class="form-control-mw" required></textarea>
+            </div>
+            <div id="status" class="form-status" style="display:none;"></div>
+            <button type="submit" id="submitBtn" class="btn-primary-mw" style="width:100%; justify-content:center;">
+              <span id="btnText"><span class="en">Send Message</span><span class="ar">إرسال الرسالة</span></span> <i
+                id="btnIcon" class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer-mw">
+    <div class="footer-top">
+      <div class="container-mw">
+        <div class="footer-grid">
+
+          <!-- Brand -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="images/campanies/1.webp" alt="Mind Web Logo" class="footer-logo-img" width="40" height="40">
+            </div>
+            <p class="footer-desc">
+              <span class="en">Professional Cyber Security and Digital Solutions. We protect your digital
+                assets and build exceptional web experiences.</span>
+              <span class="ar">حلول احترافية متكاملة في الأمن السيبراني وتطوير الويب. نحمي أصولك الرقمية ونبني تجارب ويب
+                استثنائية.</span>
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/mindweb.eg" class="footer-social-link" target="_blank"><i
+                  class="fab fa-facebook"></i></a>
+              <a href="https://github.com/MindWeb" class="footer-social-link" target="_blank"><i
+                  class="fab fa-github"></i></a>
+
+              <a href="https://www.linkedin.com/in/mindweb" class="footer-social-link" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/mindweb.eg" class="footer-social-link" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="footer-col">
+            <h6 class="footer-col-title"><span class="en">Services</span><span class="ar">خدماتنا</span></h6>
+            <ul class="footer-links">
+              <li><a href="#services"><span class="en">Cyber Security</span><span class="ar">الأمن السيبراني</span></a>
+              </li>
+              <li><a href="#services"><span class="en">Web Development</span><span class="ar">تطوير الويب</span></a>
+              </li>
+              <li><a href="#services"><span class="en">App Development</span><span class="ar">تطوير التطبيقات</span></a>
+              </li>
+              <li><a href="#services"><span class="en">IT Consulting</span><span class="ar">استشارات تقنية</span></a>
+              </li>
+              <li><a href="#services"><span class="en">Security Training</span><span class="ar">التدريب
+                    الأمني</span></a></li>
+              <li><a href="#services"><span class="en">Database Solutions</span><span class="ar">حلول قواعد
+                    البيانات</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="footer-col">
+            <h6 class="footer-col-title"><span class="en">Company</span><span class="ar">الشركة</span></h6>
+            <ul class="footer-links">
+              <li><a href="#about"><span class="en">About Us</span><span class="ar">من نحن</span></a></li>
+              <li><a href="#portfolio"><span class="en">Portfolio</span><span class="ar">أعمالنا</span></a></li>
+              <li><a href="#testimonials"><span class="en">Testimonials</span><span class="ar">الآراء</span></a></li>
+              <li><a href="#faq"><span class="en">FAQ</span><span class="ar">الأسئلة الشائعة</span></a></li>
+              <li><a href="#contact"><span class="en">Contact</span><span class="ar">اتصل بنا</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-col">
+            <h6 class="footer-col-title"><span class="en">Contact</span><span class="ar">تواصل</span></h6>
+            <ul class="footer-links">
+              <li><a href="mailto:mindweb.contact@gmail.com">mindweb.contact@gmail.com</a></li>
+              <li><span style="color:var(--text-muted);font-size:0.9rem;"><span class="en">Egypt, Cairo</span><span
+                    class="ar">مصر، القاهرة</span></span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container-mw">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">
+            &copy; 2018–2026 <a href="#home">Mind Web</a>. <span class="en">All rights reserved. Created by</span><span
+              class="ar">جميع الحقوق محفوظة. برمجة وتصميم</span> <a href="#home"><span class="en">Mohamed Walid
+                (CEO)</span><span class="ar">محمد وليد (المدير التنفيذي)</span></a>.
+          </p>
+          <div class="footer-bottom-links">
+            <a href="#home"><span class="en">Privacy Policy</span><span class="ar">سياسة الخصوصية</span></a>
+            <a href="#home"><span class="en">Terms of Service</span><span class="ar">شروط الخدمة</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Back to Top -->
+  <a href="#home" class="back-to-top-mw" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/Contact form to database.js"></script>
+
+  <script>
+    // ========== SMART PRELOADER (Tied to actual load) ==========
+    window.addEventListener('load', function () {
+      const preloader = document.getElementById('preloader');
+      // Give minimum 800ms for branding visibility, but don't artificially delay
+      const minDisplayTime = 800;
+      const loadTime = performance.now();
+      const remaining = Math.max(0, minDisplayTime - loadTime);
+      setTimeout(function () {
+        preloader.style.opacity = '0';
+        preloader.style.transition = 'opacity 0.6s ease';
+        setTimeout(() => { preloader.style.display = 'none'; }, 600);
+      }, remaining);
+    });
+
+    // ========== NAVBAR SCROLL ==========
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      // Active nav link
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      let current = '';
+      sections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - 120) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // ========== MOBILE NAV ==========
+    function toggleMobileNav() {
+      document.getElementById('mobileNav').classList.toggle('active');
+    }
+
+    // ========== BACK TO TOP ==========
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 600) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    backToTop.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      // On mobile devices, custom JS scrolling inside requestAnimationFrame 
+      // causes severe lag due to continuous scroll event firing. 
+      // Native smooth scrolling is hardware-accelerated and perfectly smooth.
+      if (window.innerWidth <= 768) {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+        return;
+      }
+
+      // Cinematic scroll for desktop
+      const scrollDuration = 1200; // 1.2 seconds
+      const start = window.pageYOffset;
+      const startTime = performance.now();
+
+      function easeInOutQuart(t) {
+        return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+      }
+
+      function scrollStep(currentTime) {
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / scrollDuration, 1);
+        window.scrollTo(0, start - (start * easeInOutQuart(progress)));
+        if (timeElapsed < scrollDuration) {
+          requestAnimationFrame(scrollStep);
+        }
+      }
+      requestAnimationFrame(scrollStep);
+    });
+
+    // ========== SCROLL REVEAL ==========
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const revealObserver = new IntersectionObserver(function (entries, observer) {
+      let delay = 0;
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+            // Animate skill bars inside this element
+            const bars = entry.target.querySelectorAll('.skill-bar-fill');
+            bars.forEach(bar => { bar.style.width = bar.dataset.width + '%'; });
+          }, delay);
+          delay += 100; // stagger delay in ms
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Immediately trigger reveal for elements already visible in viewport on load
+    setTimeout(() => {
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('visible');
+          const bars = el.querySelectorAll('.skill-bar-fill');
+          bars.forEach(bar => { bar.style.width = bar.dataset.width + '%'; });
+        }
+      });
+    }, 200);
+
+    // Skill bars observer
+    const skillBarsObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bars = document.querySelectorAll('.skill-bar-fill');
+          bars.forEach(bar => { bar.style.width = bar.dataset.width + '%'; });
+        }
+      });
+    }, { threshold: 0.1 });
+    const skillSection = document.getElementById('about');
+    if (skillSection) skillBarsObserver.observe(skillSection);
+
+    // ========== TESTIMONIALS SLIDER ==========
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial-card');
+    const dots = document.querySelectorAll('.testimonial-dot');
+
+    function showTestimonial(index) {
+      testimonials.forEach(t => t.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      currentTestimonial = (index + testimonials.length) % testimonials.length;
+      testimonials[currentTestimonial].classList.add('active');
+      dots[currentTestimonial].classList.add('active');
+    }
+
+    document.getElementById('nextTestimonial').addEventListener('click', () => showTestimonial(currentTestimonial + 1));
+    document.getElementById('prevTestimonial').addEventListener('click', () => showTestimonial(currentTestimonial - 1));
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => showTestimonial(parseInt(dot.dataset.index)));
+    });
+
+    // Auto-play testimonials
+    setInterval(() => showTestimonial(currentTestimonial + 1), 5000);
+
+    // ========== FAQ ACCORDION ==========
+    function toggleFAQ(questionEl) {
+      const faqItem = questionEl.closest('.faq-item');
+      const isActive = faqItem.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+      if (!isActive) faqItem.classList.add('active');
+    }
+
+    // ========== PORTFOLIO FILTER ==========
+    const filterBtns = document.querySelectorAll('.portfolio-filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    portfolioItems.forEach(item => {
+      item.setAttribute('data-tilt', '');
+      item.setAttribute('data-tilt-max', '8');
+      item.setAttribute('data-tilt-speed', '400');
+      item.setAttribute('data-tilt-glare', 'true');
+      item.setAttribute('data-tilt-max-glare', '0.25');
+    });
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+
+        portfolioItems.forEach(item => {
+          const cats = item.dataset.category ? item.dataset.category.split(' ') : [];
+          if (filter === '*' || cats.includes(filter)) {
+            item.classList.remove('portfolio-hidden');
+            item.style.animation = 'fadeSlide 0.4s ease forwards';
+          } else {
+            item.classList.add('portfolio-hidden');
+          }
+        });
+      });
+    });
+
+    // ========== CUSTOM MODERN CURSOR (Lovart Style) ==========
+    const cursor = document.createElement('div');
+    cursor.id = 'modern-cursor';
+    cursor.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 3.5L20 12L12 14L8 22L5.5 3.5Z" fill="#00D4FF" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
+    document.body.appendChild(cursor);
+
+    let mouseX = 0, mouseY = 0;
+    let cursorX = 0, cursorY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function loopCursor() {
+      // Smooth easing (Lerp)
+      cursorX += (mouseX - cursorX) * 0.3;
+      cursorY += (mouseY - cursorY) * 0.3;
+      cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+      requestAnimationFrame(loopCursor);
+    }
+    loopCursor();
+
+    // Hover interactions for cursor
+    const interactables = document.querySelectorAll('a, button, .service-card, .portfolio-item');
+    interactables.forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    // ========== TYPEWRITER EFFECT ==========
+    const typeTarget = document.querySelector('.type-effect');
+    const words = ["Cyber Security Services", "Advanced Web Apps", "IT Consulting", "Digital Solutions"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        typeTarget.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typeTarget.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let typeSpeed = isDeleting ? 40 : 100;
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        typeSpeed = 2000;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typeSpeed = 400;
+      }
+
+      setTimeout(type, typeSpeed);
+    }
+    if (typeTarget) type();
+
+    // ========== SMOOTH SCROLL FOR NAV LINKS ==========
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+
+          // Cinematic smooth scroll (Custom Ease)
+          const headerOffset = 80; // Offset for the fixed navbar
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+          const startPosition = window.pageYOffset;
+          const distance = targetPosition - startPosition;
+
+          // Dynamic duration based on distance so long scrolls aren't too fast, short aren't too slow
+          let scrollDuration = 1200;
+          if (Math.abs(distance) < 800) scrollDuration = 800;
+          else if (Math.abs(distance) > 2500) scrollDuration = 1500;
+
+          const startTime = performance.now();
+
+          // Smooth easing function (easeInOutQuart)
+          function easeInOutQuart(t) {
+            return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+          }
+
+          function scrollStep(currentTime) {
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / scrollDuration, 1);
+
+            window.scrollTo(0, startPosition + distance * easeInOutQuart(progress));
+
+            if (timeElapsed < scrollDuration) {
+              requestAnimationFrame(scrollStep);
+            }
+          }
+
+          requestAnimationFrame(scrollStep);
+        }
+      });
+    });
+
+    // ========== HERO PARALLAX EFFECT (#9) ==========
+    const heroSection = document.querySelector('.hero');
+    const heroGlow1 = document.querySelector('.hero-glow-1');
+    const heroGlow2 = document.querySelector('.hero-glow-2');
+    const heroGrid = document.querySelector('.hero-grid');
+    window.addEventListener('scroll', function () {
+      if (heroSection) {
+        const scrollY = window.scrollY;
+        const heroHeight = heroSection.offsetHeight;
+        if (scrollY < heroHeight) {
+          const parallaxFactor = scrollY * 0.3;
+          if (heroGlow1) heroGlow1.style.transform = `translateY(${parallaxFactor}px)`;
+          if (heroGlow2) heroGlow2.style.transform = `translateY(${parallaxFactor * 0.6}px)`;
+          if (heroGrid) heroGrid.style.transform = `translateY(${parallaxFactor * 0.15}px)`;
+        }
+      }
+    });
+
+    // ========== DARK / LIGHT MODE TOGGLE (#12) ==========
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const savedTheme = localStorage.getItem('mw-theme');
+
+    if (savedTheme === 'light') {
+      document.body.classList.add('light-mode');
+      themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      const isLight = document.body.classList.contains('light-mode');
+      themeIcon.classList.replace(isLight ? 'fa-moon' : 'fa-sun', isLight ? 'fa-sun' : 'fa-moon');
+      localStorage.setItem('mw-theme', isLight ? 'light' : 'dark');
+    });
+
+  </script>
+
+  <!-- Vanilla Tilt JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+  <!-- Particles JS -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    // ========== SCROLL PROGRESS BAR ==========
+    window.addEventListener('scroll', () => {
+      const scrollProgress = document.getElementById('scroll-progress');
+      if (scrollProgress) {
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.scrollY / docHeight) * 100;
+        scrollProgress.style.width = scrolled + '%';
+      }
+    });
+
+    // ========== DYNAMIC COUNTERS ==========
+    const statNumbers = document.querySelectorAll('.counter-number');
+    const statsObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const targetEl = entry.target;
+          const targetNumber = parseInt(targetEl.getAttribute('data-target'));
+          const suffix = targetEl.getAttribute('data-suffix');
+          let current = 0;
+          const increment = targetNumber / 40; // smoothly count in 40 frames
+
+          const counterInterval = setInterval(() => {
+            current += increment;
+            if (current >= targetNumber) {
+              targetEl.innerText = targetNumber + suffix;
+              clearInterval(counterInterval);
+            } else {
+              targetEl.innerText = Math.ceil(current) + suffix;
+            }
+          }, 40);
+
+          observer.unobserve(targetEl);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    statNumbers.forEach(num => statsObserver.observe(num));
+
+    // ========== DEDICATED COUNTER FIX FOR ABOUT EXP BADGE ==========
+    // The about-exp-num is position:absolute and may not trigger the general observer
+    const aboutExpNum = document.querySelector('.about-exp-num');
+    if (aboutExpNum) {
+      let aboutCounterDone = false;
+      const aboutExpObserver = new IntersectionObserver((entries, observer) => {
+        if (entries[0].isIntersecting && !aboutCounterDone) {
+          aboutCounterDone = true;
+          const target = parseInt(aboutExpNum.getAttribute('data-target'));
+          const suffix = aboutExpNum.getAttribute('data-suffix');
+          let current = 0;
+          const increment = target / 40;
+          const counterInt = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              aboutExpNum.innerText = target + suffix;
+              clearInterval(counterInt);
+            } else {
+              aboutExpNum.innerText = Math.ceil(current) + suffix;
+            }
+          }, 40);
+          observer.disconnect();
+        }
+      }, { threshold: 0.1, rootMargin: '0px 0px -20px 0px' });
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) aboutExpObserver.observe(aboutSection);
+    }
+
+    // ========== PARTICLES.JS INIT ==========
+    if (typeof particlesJS !== 'undefined') {
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 60, density: { enable: true, value_area: 800 } },
+          color: { value: "#00d4ff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.3, random: true },
+          size: { value: 2, random: true },
+          line_linked: { enable: true, distance: 150, color: "#00d4ff", opacity: 0.2, width: 1 },
+          move: { enable: true, speed: 1.5, direction: "none", random: true, out_mode: "out" }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: true, mode: "push" },
+            resize: true
+          },
+          modes: {
+            grab: { distance: 200, line_linked: { opacity: 0.6 } },
+            push: { particles_nb: 4 }
+          }
+        },
+        retina_detect: true
+      });
+    }
+
+    // ========== MAGNETIC BUTTONS (Refined PHYSICS) ==========
+    const magneticBtns = document.querySelectorAll('.magnetic-btn');
+    magneticBtns.forEach(btn => {
+      btn.addEventListener('mousemove', function (e) {
+        const position = btn.getBoundingClientRect();
+        const centerX = position.left + position.width / 2;
+        const centerY = position.top + position.height / 2;
+
+        // Calculate distance from center
+        const x = (e.clientX - centerX) * 0.4;
+        const y = (e.clientY - centerY) * 0.4;
+
+        btn.style.transform = `translate(${x}px, ${y}px)`;
+      });
+
+      btn.addEventListener('mouseleave', function () {
+        btn.style.transform = 'translate(0px, 0px)';
+      });
+    });
+
+    // ========== HERO TERMINAL TYPING (V3 - CHARACTER-BY-CHARACTER) ==========
+    const terminal = document.getElementById('heroTerminal');
+    if (terminal) {
+      const codeLines = Array.from(terminal.querySelectorAll('.code-line'));
+
+      // Store original contents and clear text
+      const originalLines = codeLines.map((line, idx) => {
+        const contents = Array.from(line.childNodes).map(node => ({
+          node: node,
+          text: node.textContent,
+          tagName: node.tagName
+        }));
+
+        // IF FIRST 3 LINES: Show immediately
+        if (idx < 3) {
+          line.style.opacity = '1';
+        } else {
+          // Hide others initially
+          line.style.opacity = '0';
+          // Clear nodes text only for lines 4+
+          contents.forEach(item => item.node.textContent = '');
+        }
+        return contents;
+      });
+
+      let currentLineIdx = 3; // START TYPING FROM LINE 4
+      let currentCharIdx = 0;
+      let currentNodeIdx = 0;
+
+      function typeCharacter() {
+        if (currentLineIdx >= codeLines.length) return;
+
+        const line = codeLines[currentLineIdx];
+        const nodes = originalLines[currentLineIdx];
+
+        if (line.style.opacity === '0') {
+          line.style.opacity = '1';
+        }
+
+        if (currentNodeIdx < nodes.length) {
+          const item = nodes[currentNodeIdx];
+          const targetText = item.text;
+
+          if (currentCharIdx < targetText.length) {
+            item.node.textContent += targetText.charAt(currentCharIdx);
+            currentCharIdx++;
+            setTimeout(typeCharacter, 5 + Math.random() * 15); // Faster dynamic typing speed
+          } else {
+            // Move to next node in same line
+            currentNodeIdx++;
+            currentCharIdx = 0;
+            typeCharacter();
+          }
+        } else {
+          // Move to next line
+          currentLineIdx++;
+          currentNodeIdx = 0;
+          currentCharIdx = 0;
+          setTimeout(typeCharacter, 80); // Shorter pause between lines
+        }
+      }
+
+      // Initial delay to wait for hero animations to start
+      setTimeout(typeCharacter, 2200);
+    }
+
+    // ========== HOLOGRAPHIC CARDS MOUSE TRACKING (Option 4) ==========
+    const holoCards = document.querySelectorAll('.holographic-card');
+    holoCards.forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+      });
+    });
+
+    // ========== LIVE CYBER TERMINAL SIMULATION (Option 2) ==========
+    const aboutTerminalOut = document.getElementById('terminalOutput');
+    if (aboutTerminalOut) {
+      const logs = [
+        "<span class='cyber-line'>[SYSTEM] Accessing global threat intelligence grid...</span>",
+        "<span class='cyber-line'>[OK] Connection established. Ping: 12ms.</span>",
+        "<span class='cyber-line'>[SCAN] Analyzing incoming traffic headers...</span>",
+        "<span class='cyber-line cyber-warn'>[WARN] Suspicious SQL injection query detected from IP 192.168.x.x</span>",
+        "<span class='cyber-line cyber-error'>[BLOCKED] Threat neutralized instantly. IPS rules updated.</span>",
+        "<span class='cyber-line'>[SYSTEM] Routine system integrity check initiated.</span>",
+        "<span class='cyber-line'>[OK] All modules operating at optimal efficiency. Security active.</span>"
+      ];
+
+      let currentLog = 0;
+      let currentChar = 0;
+
+      function typeCyberLog() {
+        if (currentLog >= logs.length) {
+          // Reset loop
+          setTimeout(() => {
+            aboutTerminalOut.innerHTML = '';
+            currentLog = 0;
+            typeCyberLog();
+          }, 5000);
+          return;
+        }
+
+        const logHtml = logs[currentLog];
+
+        // Skip typing HTML tags
+        if (currentChar === 0) {
+          aboutTerminalOut.insertAdjacentHTML('beforeend', logHtml.substring(0, logHtml.indexOf(']') + 1) + ' ');
+          currentChar = logHtml.indexOf(']') + 1;
+        }
+
+        if (currentChar < logHtml.length) {
+          let char = logHtml[currentChar];
+          // Handle html tags like </span> smoothly without typing them
+          if (char === '<' && logHtml.substring(currentChar, currentChar + 7) === '</span>') {
+            aboutTerminalOut.lastChild.innerHTML += '</span>';
+            currentChar += 7;
+          } else if (logHtml.startsWith("<span", currentChar)) {
+            // fast forward to end of tag
+            let endTag = logHtml.indexOf('>', currentChar);
+            aboutTerminalOut.innerHTML += logHtml.substring(currentChar, endTag + 1);
+            currentChar = endTag + 1;
+          } else {
+            aboutTerminalOut.lastChild.innerHTML += char;
+            currentChar++;
+          }
+          aboutTerminalOut.scrollTop = aboutTerminalOut.scrollHeight;
+          setTimeout(typeCyberLog, Math.random() * 30 + 10);
+        } else {
+          currentLog++;
+          currentChar = 0;
+          setTimeout(typeCyberLog, 600 + Math.random() * 800);
+        }
+      }
+
+      // Initialize with intersection observer so it types when visible
+      const terminalObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          aboutTerminalOut.innerHTML = '';
+          setTimeout(typeCyberLog, 500);
+          terminalObserver.disconnect();
+        }
+      });
+      terminalObserver.observe(document.getElementById('aboutTerminal'));
+    }
+    // ========== LANGUAGE TOGGLE (Option 6) ==========
+    function performLanguageSwitch(html, btn) {
+      if (html.lang === 'en') {
+        html.lang = 'ar';
+        btn.innerText = 'EN';
+        btn.setAttribute('title', 'Switch to English');
+      } else {
+        html.lang = 'en';
+        btn.innerText = 'AR';
+        btn.setAttribute('title', 'Switch to Arabic');
+      }
+    }
+
+    function toggleLanguage() {
+      const html = document.documentElement;
+      const btn = document.getElementById('langToggleBtn');
+
+      // Remove previously applied manual body opacity transition overrides
+      document.body.style.transition = '';
+      document.body.style.opacity = '';
+
+      // Use native View Transitions API for Apple-like smooth crossfade
+      if (!document.startViewTransition) {
+        performLanguageSwitch(html, btn);
+      } else {
+        document.startViewTransition(() => {
+          performLanguageSwitch(html, btn);
+        });
+      }
+    }
+  </script>
+
+</body>
+
+</html>
